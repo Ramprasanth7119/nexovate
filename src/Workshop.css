@@ -1,0 +1,103 @@
+.workshops-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .workshop-card {
+    width: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .workshop-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .card {
+    position: relative;
+    padding: 20px;
+  }
+  
+  .card-corner {
+    position: absolute;
+    font-size: 1.2em;
+  }
+  
+  .top-left {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .bottom-right {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .card-border {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-content {
+    padding: 10px;
+  }
+  
+  .description {
+    list-style: none;
+    margin: 5px 0;
+  }
+  
+  .coordinator {
+    font-weight: bold;
+  }
+  
+  .badge, .chip {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+  
+  .badge {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .chip {
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .workshop-card {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  
+    .card-content {
+      padding: 5px;
+    }
+  
+    .badge, .chip {
+      width: 40px;
+      height: 40px;
+    }
+  }

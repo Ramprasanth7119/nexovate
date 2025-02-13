@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #0a6428; /* Green poker table background */
-  padding: 20px;
+  padding: 100px;
   gap: 40px;
 }
 
@@ -31,24 +31,42 @@
   padding: 16px;
   position: relative;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.card-header {
-  font-size: 22px;
-  font-weight: bold;
+.card-border {
+  border: 2px solid black;
+  width: 230px;
+  height: 450px;
+  border-radius: 10px;
+  padding: 9px;
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-image {
-  width: 100%;
+  width: 80%;
   height: auto;
   object-fit: cover;
   margin: 10px 0;
 }
 
+.card-content {
+  text-align: center;
+  padding: 8px;
+}
+
 .card-content h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .card-content p {
@@ -62,33 +80,53 @@
   margin-top: 8px;
 }
 
+/* Poker Card Rank & Suit Styling */
+.card-corner {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(180deg);
+}
+
+/* Badge & Poker Chip */
 .badge {
   width: 100px;
   position: absolute;
-  bottom: -40px;
-  left: -40px;
+  bottom: -30px;
+  left: -25px;
 }
 
 .chip {
   width: 100px;
   position: absolute;
-  top: -30px;
-  right: -40px;
+  top: -25px;
+  right: -25px;
 }
 
-.card-border{
-  border: 1px solid black;
+/* Description */
+.description {
+  text-align: justify;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
 }
 
 .rank , .suit{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  padding-right:20px;
+  width: 30px;
+  font-size: 30px;
 }
