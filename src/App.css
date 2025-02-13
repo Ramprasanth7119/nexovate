@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.workshops-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0a6428; /* Green poker table background */
+  padding: 20px;
+  gap: 40px;
+}
+
+.workshop-card {
+  position: relative;
+  width: 300px;
+  text-align: center;
+}
+
+.workshop-title {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  position: relative;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 10px 0;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.coordinator {
+  font-weight: bold;
+  color: #d32f2f;
+  margin-top: 8px;
+}
+
+.badge {
+  width: 100px;
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+}
+
+.chip {
+  width: 100px;
+  position: absolute;
+  top: -30px;
+  right: -40px;
+}
+
+.card-border{
+  border: 1px solid black;
+}
+
+.rank , .suit{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  padding-right:20px;
+}
